@@ -1,7 +1,6 @@
-class Fire {
+class Fire extends LivingCreature {
     constructor(x, y) {
-        this.x = x
-        this.y = y
+        super(x,y)
         this.energy = 5
         this.directions = []
     }
