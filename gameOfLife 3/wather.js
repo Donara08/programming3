@@ -1,4 +1,4 @@
-class Wather extends LivingCreature {
+module.export = class Wather extends LivingCreature {
     constructor(x,y){
         super(x,y)
         //this.multiply = 0
