@@ -12,7 +12,7 @@ module.export = class Grass extends LivingCreature{
     mul(){
           this.multiply++
           let emptyCell = this.chooseCell(0)
-          let newCell = random (emptyCell)
+          let newCell = emptyCell[Math.floor(Math.random() * emptyCell.lenght)]
       
           if(newCell && this.multiply >= 5){
                      let newX  =   newCell[0]
@@ -33,7 +33,7 @@ module.export = class Grass extends LivingCreature{
 
 move(){
     let emptyCell = this.chooseCell(0)
-    let newCell = random(emptyCell)
+    let newCell = emptyCell[Math.floor(Math.random() * emptyCell.lenght)]
 
         if(newCell){
             let newX = newCell[0]

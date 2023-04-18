@@ -7,8 +7,7 @@ module.export = class Wather extends LivingCreature {
 
 move(){
     let emptyCell = this.chooseCell(0)
-    let newCell = random(emptyCell)
-
+    let newCell = emptyCell[Math.floor(Math.random() * emptyCell.lenght)]
         if(newCell){
             let newX = newCell[0]
             let newY = newCell[1]
