@@ -7,7 +7,18 @@ function setup() {
 
 
 }
-
+socket.on("Spring", function (data){
+        weath = data
+})
+socket.on("Summer", function (data){
+        weath = data
+})
+socket.on("Autumn", function (data){
+        weath = data
+})
+socket.on("Winter", function (data){
+        weath = data
+})
 
 function changeColor(matrix) {
         for (let y = 0; y < matrix.length; y++) {

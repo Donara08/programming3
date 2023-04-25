@@ -179,3 +179,52 @@ setInterval(game, 300);
 io.on("connection", function(){
         CreateObject()
 })
+var weath;
+function Spring(){
+        weath = "spring";
+        io.sockets.emit("Spring", weath)
+}
+function Summer(){
+        weath = "summer";
+        io.sockets.emit("Summer", weath)
+}
+function Autumn(){
+        weath = "autumn";
+        io.sockets.emit("Autumn", weath)
+}
+function Winter(){
+        weath = "winter";
+        io.sockets.emit("Winter", weath)
+}
+// function kill(){
+//         grassArr = []
+//         grassEaterArr = []
+//         predatorArr = []
+//         fireArr = []
+//         watherArr = []
+//         for (var y = 0; y < matrix.length; y++){
+//                 for(var x = 0; x< matrix[y].lenght; x++){
+//                         matrix[y][x]=0
+
+//                 }
+
+//         }
+//         io.sockets.emit("send matrix", matrix)
+// }
+//function addGrass(){
+
+//} 
+
+
+var statistics ={};
+setInterval(function(){
+        statistics.grass = grassArr.length;
+        statistics.grassEater = grassEaterArr.lenght;
+        statistics.predator = predatorArr.lenght;
+        statistics.fire = fireArr.lenght;
+        statistics.wather = watherArr.lenght;
+        fs.writeFile("statistics.json", JSON.stringify(statistics),function(){
+
+        })
+
+}, 1000);
