@@ -73,7 +73,7 @@ module.exports = class Fire extends LivingCreature {
         let emptyCell = this.chooseCell(1, 2, 3, 5)
         let newCell = emptyCell[Math.floor(Math.random() * emptyCell.length)]
         if (newCell) {
-            this.energy += 5
+            this.energy += 2
             let newX = newCell[0]
             let newY = newCell[1]
 
@@ -122,7 +122,7 @@ module.exports = class Fire extends LivingCreature {
 
     move() {
         let emptyCell = this.chooseCell(0)
-        let newCell = emptyCell[Math.floor(Math.random() * emptyCell.lenght)]
+        let newCell = emptyCell[Math.floor(Math.random() * emptyCell.length)]
 
         if (newCell) {
             let newX = newCell[0]

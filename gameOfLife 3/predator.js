@@ -3,7 +3,7 @@ module.exports = class Predator extends LivingCreature{
     constructor(x, y) {
         super(x,y)
         this.energy = 15    
-        this.directions = []
+       this.directions = []
     }
 
  getNewCoordinates(){ 
@@ -19,7 +19,7 @@ module.exports = class Predator extends LivingCreature{
             ];
         }
     chooseCell(char, char1) {
-        this.getNewCoordinates()
+        this.getNewCoordinates ()
         let found = []
 
 
