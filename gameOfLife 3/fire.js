@@ -111,7 +111,7 @@ module.exports = class Fire extends LivingCreature {
             this.x = newX
             this.y = newY
 
-            if (this.energy > 100) {
+            if (this.energy > 30) {
                 this.mul()
             }
 

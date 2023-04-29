@@ -205,7 +205,7 @@ function kill(){
         fireArr = []
         watherArr = []
         for (var y = 0; y < matrix.length; y++){
-                for(var x = 0; x< matrix[y].lenght; x++){
+                for(var x = 0; x< matrix[y].length; x++){
                         matrix[y][x]=0
 
                 }
@@ -312,10 +312,10 @@ io.on('connection', function (socket) {
 var statistics ={};
 setInterval(function(){
         statistics.grass = grassArr.length;
-        statistics.grassEater = grassEaterArr.lenght;
-        statistics.predator = predatorArr.lenght;
-        statistics.fire = fireArr.lenght;
-        statistics.wather = watherArr.lenght;
+        statistics.grassEater = grassEaterArr.length;
+        statistics.predator = predatorArr.length;
+        statistics.fire = fireArr.length;
+        statistics.wather = watherArr.length;
         fs.writeFile("statistics.json", JSON.stringify(statistics),function(){
 
         })
