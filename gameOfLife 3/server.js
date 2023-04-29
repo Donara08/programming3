@@ -118,7 +118,7 @@ Fire = require("./fire")
 GrassEater = require("./grassEater")
 Wather = require("./wather")
 clearInterval
-//
+//////
 
 function CreateObject() {
         for (let y = 0; y < matrix.length; y++) {
